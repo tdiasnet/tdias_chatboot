@@ -87,3 +87,18 @@ Clone this repo and review the `/docs` and `/src` folders for detailed instructi
 ```bash
 git clone git@github.com:tdiasnet/tdias_chatboot.git
 cd tdias_chatboot
+
+
+tdias-net/
+├── Dockerfile
+├── docker-compose.yml
+├── grav.ini
+├── grav/
+│   ├── .htaccess
+│   ├── assets/
+│   │   └── admin-preset.css
+│   ├── cache/
+│   │   └── compiled/
+│   └── ... other GravCMS files
+├── README.md
+└── ... other project files
