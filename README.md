@@ -88,17 +88,32 @@ Clone this repo and review the `/docs` and `/src` folders for detailed instructi
 git clone git@github.com:tdiasnet/tdias_chatboot.git
 cd tdias_chatboot
 
+## 🗂️ Project Structure
 
-tdias-net/
-├── Dockerfile
-├── docker-compose.yml
-├── grav.ini
-├── grav/
-│   ├── .htaccess
-│   ├── assets/
-│   │   └── admin-preset.css
-│   ├── cache/
-│   │   └── compiled/
-│   └── ... other GravCMS files
-├── README.md
-└── ... other project files
+```text
+tdias_chatboot/
+├── .github/
+│   └── workflows/
+│       └── ci.yml              # GitHub Actions CI/CD pipeline
+├── docker/
+│   ├── Dockerfile              # Dockerfile for app container
+│   └── docker-compose.yml      # Docker Compose setup
+├── src/
+│   ├── api/
+│   │   └── main.py             # FastAPI app entry point
+│   ├── models/
+│   │   └── inference.py        # Mistral inference handler
+│   └── utils/
+│       └── helpers.py          # Utility functions
+├── data/
+│   └── README.md               # Placeholder for data descriptions
+├── tests/
+│   ├── test_api.py             # API tests
+│   └── test_model.py           # Model inference tests
+├── docs/
+│   └── architecture.md         # System architecture and diagrams
+├── .env.example                # Example environment variables
+├── .gitignore                  # Git ignore file
+├── README.md                   # Project documentation
+├── requirements.txt            # Python dependencies
+└── LICENSE                     # Project license
