@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  tdias_chatboot:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    volumes:
+      - ../:/app
+    environment:
+      - ENV=development
+    ports:
+      - "8000:8000"
