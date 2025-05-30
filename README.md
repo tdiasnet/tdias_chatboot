@@ -85,5 +85,5 @@ Check specific licenses for each tool used within this project.
 Clone this repo and review the `/docs` and `/src` folders for detailed instructions on setup, development workflow, and deployment strategies.
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/tdias_chatboot.git
+git clone git@github.com:tdiasnet/tdias_chatboot.git
 cd tdias_chatboot
